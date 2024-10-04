@@ -1,0 +1,25 @@
+object dmoduleprincipal: Tdmoduleprincipal
+  OldCreateOrder = False
+  Height = 150
+  HorizontalOffset = 558
+  VerticalOffset = 224
+  Width = 263
+  object conexao: TSQLite3Connection
+    Connected = False
+    LoginPrompt = False
+    AfterConnect = conexaoAfterConnect
+    DatabaseName = 'reg_vel.db'
+    KeepConnection = False
+    Transaction = transacao
+    HostName = 'localhost'
+    AlwaysUseBigint = False
+    Left = 80
+    Top = 16
+  end
+  object transacao: TSQLTransaction
+    Active = False
+    Database = conexao
+    Left = 168
+    Top = 24
+  end
+end

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="registro_veiculos.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="16" Y="19"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="principal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmprincipal"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="25"/>
+        <CursorPos X="61" Y="27"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="pessoas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmPessoas"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="42"/>
+        <CursorPos X="27" Y="86"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="dmprincipal.pas"/>
+        <ComponentName Value="dmoduleprincipal"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="dmoduleprincipal"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="22"/>
+        <UsageCount Value="20"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\lcl\controls.pp"/>
+        <UnitName Value="Controls"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="218"/>
+        <CursorPos X="3" Y="229"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="funcoes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="19"/>
+        <CursorPos X="20" Y="34"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\lcl\interfaces\win32\win32memostrings.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="87"/>
+        <CursorPos Y="99"/>
+        <UsageCount Value="10"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="31" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="33" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="34" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="38" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="31" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="33" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="34" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="44" Column="6" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="31" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="pessoas.pas"/>
+        <Caret Line="79" Column="25" TopLine="74"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="22" TopLine="12"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="24" TopLine="12"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="26" TopLine="12"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="28" TopLine="12"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="29" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="31" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="33" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="34" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="31" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="33" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="34" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="31" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="33" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="34" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="31" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="33" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="34" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="31" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="33" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="funcoes.pas"/>
+        <Caret Line="34" TopLine="19"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

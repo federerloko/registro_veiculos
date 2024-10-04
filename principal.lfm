@@ -1,0 +1,25 @@
+object frmprincipal: Tfrmprincipal
+  Left = 413
+  Height = 472
+  Top = 55
+  Width = 448
+  Caption = 'frmprincipal'
+  ClientHeight = 472
+  ClientWidth = 448
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -21
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  OnCreate = FormCreate
+  LCLVersion = '3.4.0.0'
+  object lblPessoasForm: TLabel
+    Left = 112
+    Height = 30
+    Top = 24
+    Width = 190
+    Caption = 'Cadastro de Pessoas'
+    OnClick = lblPessoasFormClick
+    OnMouseLeave = lblPessoasFormMouseLeave
+    OnMouseMove = lblPessoasFormMouseMove
+  end
+end

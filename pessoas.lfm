@@ -1,0 +1,124 @@
+object frmPessoas: TfrmPessoas
+  Left = 76
+  Height = 510
+  Top = 97
+  Width = 912
+  Caption = 'Pessoas'
+  ClientHeight = 510
+  ClientWidth = 912
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -21
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '3.4.0.0'
+  object Label1: TLabel
+    Left = 24
+    Height = 30
+    Top = 8
+    Width = 32
+    Caption = 'Cpf'
+  end
+  object Label2: TLabel
+    Left = 24
+    Height = 30
+    Top = 88
+    Width = 57
+    Caption = 'Nome'
+  end
+  object Label3: TLabel
+    Left = 24
+    Height = 30
+    Top = 176
+    Width = 106
+    Caption = 'Sobrenome'
+  end
+  object Label4: TLabel
+    Left = 24
+    Height = 30
+    Top = 240
+    Width = 74
+    Caption = 'Contato'
+  end
+  object Label5: TLabel
+    Left = 24
+    Height = 30
+    Top = 312
+    Width = 161
+    Caption = 'Data Nascimento'
+  end
+  object edtdatanascimento: TEdit
+    Left = 208
+    Height = 38
+    Top = 312
+    Width = 272
+    TabOrder = 4
+  end
+  object edtcontato: TEdit
+    Left = 176
+    Height = 38
+    Top = 240
+    Width = 272
+    TabOrder = 3
+  end
+  object edtsobrenome: TEdit
+    Left = 176
+    Height = 38
+    Top = 176
+    Width = 272
+    TabOrder = 2
+  end
+  object edtnome: TEdit
+    Left = 176
+    Height = 38
+    Top = 88
+    Width = 272
+    TabOrder = 1
+  end
+  object edtcpf: TEdit
+    Left = 176
+    Height = 38
+    Top = 8
+    Width = 272
+    TabOrder = 0
+  end
+  object btnNovo: TButton
+    Left = 48
+    Height = 41
+    Top = 392
+    Width = 216
+    Caption = 'Novo'
+    TabOrder = 5
+    OnClick = btnNovoClick
+  end
+  object btnConfirma: TButton
+    Left = 304
+    Height = 41
+    Top = 392
+    Width = 232
+    Caption = 'Confirma'
+    TabOrder = 6
+    OnClick = btnConfirmaClick
+  end
+  object Memo1: TMemo
+    Left = 616
+    Height = 346
+    Top = 16
+    Width = 248
+    Lines.Strings = (
+      'Memo1'
+    )
+    TabOrder = 7
+  end
+  object btnSincronizar: TButton
+    Left = 560
+    Height = 41
+    Top = 392
+    Width = 264
+    Caption = 'Sincronizar'
+    Enabled = False
+    TabOrder = 8
+    OnClick = btnSincronizarClick
+  end
+end
