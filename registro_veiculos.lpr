@@ -10,15 +10,16 @@ uses
   athreads,
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, principal, pessoas, funcoes;
+  Forms, principal, pessoas, funcoes, veiculos, dmVeiculos;
 
 {$R *.res}
 
 begin
-  RequireDerivedFormResource:=True;
+  RequireDerivedFormResource:=False;
   Application.Scaled:=True;
   Application.Initialize;
   Application.CreateForm(Tfrmprincipal, frmprincipal);
+  Application.CreateForm(TDataModule1, DataModule1);
   Application.Run;
 end.
 

@@ -5,9 +5,10 @@ unit funcoes;
 interface
 
 uses
-  Classes, SysUtils;
+  Classes, SysUtils, SQLite3Conn,Dialogs;
 
 function ComandosCSV(stArquivo:TStringList):TStringList;
+procedure EnviaComando(database:TSQLite3Connection;sSql:string);
 
 implementation
 
@@ -42,6 +43,20 @@ begin
 
      Result:=stLista;
      //FreeAndNil(stLista);
+end;
+
+procedure EnviaComando(database:TSQLite3Connection;sSql: string);
+begin
+  try
+        database.Transaction.StartTransaction;
+        database.ExecuteDirect(sSql);
+        database.Transaction.Commit;
+     except on E:Exception do
+     begin
+            ShowMessage('Erro :'+e.Message);
+            database.Transaction.Rollback;
+     end;
+     end;
 end;
 
 end.

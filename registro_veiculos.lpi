@@ -58,6 +58,19 @@
         <Filename Value="funcoes.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="veiculos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmVeiculos"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="dmveiculos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DataModule1"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="dmVeiculos"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

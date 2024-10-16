@@ -1,7 +1,7 @@
 object frmprincipal: Tfrmprincipal
-  Left = 413
+  Left = 273
   Height = 472
-  Top = 55
+  Top = 280
   Width = 448
   Caption = 'frmprincipal'
   ClientHeight = 472
@@ -11,6 +11,7 @@ object frmprincipal: Tfrmprincipal
   Font.Pitch = fpVariable
   Font.Quality = fqDraft
   OnCreate = FormCreate
+  OnShow = FormShow
   LCLVersion = '3.4.0.0'
   object lblPessoasForm: TLabel
     Left = 112
@@ -19,6 +20,16 @@ object frmprincipal: Tfrmprincipal
     Width = 190
     Caption = 'Cadastro de Pessoas'
     OnClick = lblPessoasFormClick
+    OnMouseLeave = lblPessoasFormMouseLeave
+    OnMouseMove = lblPessoasFormMouseMove
+  end
+  object lblVeiculos: TLabel
+    Left = 112
+    Height = 30
+    Top = 112
+    Width = 194
+    Caption = 'Cadastro de Veiculos'
+    OnClick = lblVeiculosClick
     OnMouseLeave = lblPessoasFormMouseLeave
     OnMouseMove = lblPessoasFormMouseMove
   end

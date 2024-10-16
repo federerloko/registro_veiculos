@@ -1,0 +1,23 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 239
+  HorizontalOffset = 412
+  VerticalOffset = 61
+  Width = 234
+  object database: TSQLite3Connection
+    Connected = False
+    LoginPrompt = False
+    DatabaseName = 'reg_vel.db'
+    KeepConnection = False
+    Transaction = transaction
+    AlwaysUseBigint = False
+    Left = 48
+    Top = 56
+  end
+  object transaction: TSQLTransaction
+    Active = False
+    Database = database
+    Left = 128
+    Top = 56
+  end
+end

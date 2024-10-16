@@ -5,7 +5,8 @@ unit pessoas;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, funcoes;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, funcoes,
+  dmVeiculos;
 
 type
 
@@ -76,6 +77,8 @@ end;
 procedure TfrmPessoas.btnSincronizarClick(Sender: TObject);
 begin
      Memo1.Lines:=ComandosCSV(stPessoas);
+
+     EnviaComando(DataModule1.database,Memo1.Lines[0]);
 end;
 
 procedure TfrmPessoas.btnConfirmaClick(Sender: TObject);

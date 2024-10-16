@@ -1,11 +1,11 @@
 object frmPessoas: TfrmPessoas
-  Left = 76
-  Height = 510
-  Top = 97
-  Width = 912
+  Left = 115
+  Height = 614
+  Top = 115
+  Width = 832
   Caption = 'Pessoas'
-  ClientHeight = 510
-  ClientWidth = 912
+  ClientHeight = 614
+  ClientWidth = 832
   Font.CharSet = ANSI_CHARSET
   Font.Height = -21
   Font.Pitch = fpVariable
@@ -84,37 +84,38 @@ object frmPessoas: TfrmPessoas
     TabOrder = 0
   end
   object btnNovo: TButton
-    Left = 48
+    Left = 488
     Height = 41
-    Top = 392
-    Width = 216
+    Top = 8
+    Width = 264
     Caption = 'Novo'
     TabOrder = 5
     OnClick = btnNovoClick
   end
   object btnConfirma: TButton
-    Left = 304
+    Left = 488
     Height = 41
-    Top = 392
-    Width = 232
+    Top = 88
+    Width = 264
     Caption = 'Confirma'
     TabOrder = 6
     OnClick = btnConfirmaClick
   end
   object Memo1: TMemo
-    Left = 616
-    Height = 346
-    Top = 16
-    Width = 248
+    Left = 24
+    Height = 250
+    Top = 360
+    Width = 768
     Lines.Strings = (
       'Memo1'
     )
     TabOrder = 7
+    WordWrap = False
   end
   object btnSincronizar: TButton
-    Left = 560
+    Left = 488
     Height = 41
-    Top = 392
+    Top = 160
     Width = 264
     Caption = 'Sincronizar'
     Enabled = False
