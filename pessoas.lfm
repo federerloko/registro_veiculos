@@ -1,7 +1,7 @@
 object frmPessoas: TfrmPessoas
-  Left = 115
+  Left = 169
   Height = 614
-  Top = 115
+  Top = 19
   Width = 832
   Caption = 'Pessoas'
   ClientHeight = 614
@@ -11,6 +11,7 @@ object frmPessoas: TfrmPessoas
   Font.Pitch = fpVariable
   Font.Quality = fqDraft
   OnCreate = FormCreate
+  OnShow = FormShow
   Position = poScreenCenter
   LCLVersion = '3.4.0.0'
   object Label1: TLabel
@@ -49,11 +50,12 @@ object frmPessoas: TfrmPessoas
     Caption = 'Data Nascimento'
   end
   object edtdatanascimento: TEdit
-    Left = 208
+    Left = 648
     Height = 38
     Top = 312
-    Width = 272
+    Width = 112
     TabOrder = 4
+    OnChange = edtdatanascimentoChange
   end
   object edtcontato: TEdit
     Left = 176
@@ -75,6 +77,7 @@ object frmPessoas: TfrmPessoas
     Top = 88
     Width = 272
     TabOrder = 1
+    OnChange = edtnomeChange
   end
   object edtcpf: TEdit
     Left = 176
@@ -82,6 +85,7 @@ object frmPessoas: TfrmPessoas
     Top = 8
     Width = 272
     TabOrder = 0
+    OnChange = edtcpfChange
   end
   object btnNovo: TButton
     Left = 488
@@ -101,17 +105,6 @@ object frmPessoas: TfrmPessoas
     TabOrder = 6
     OnClick = btnConfirmaClick
   end
-  object Memo1: TMemo
-    Left = 24
-    Height = 250
-    Top = 360
-    Width = 768
-    Lines.Strings = (
-      'Memo1'
-    )
-    TabOrder = 7
-    WordWrap = False
-  end
   object btnSincronizar: TButton
     Left = 488
     Height = 41
@@ -119,7 +112,51 @@ object frmPessoas: TfrmPessoas
     Width = 264
     Caption = 'Sincronizar'
     Enabled = False
-    TabOrder = 8
+    TabOrder = 7
     OnClick = btnSincronizarClick
+  end
+  object dbgPessoas: TDBGrid
+    Left = 24
+    Height = 220
+    Top = 360
+    Width = 792
+    Color = clWindow
+    Columns = <>
+    DataSource = dsPessoas
+    Options = [dgEditing, dgTitles, dgIndicator, dgColLines, dgRowLines, dgTabs, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+    TabOrder = 8
+  end
+  object dtDataNasc: TDateEdit
+    Left = 208
+    Height = 38
+    Top = 312
+    Width = 256
+    CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+    DefaultToday = True
+    DateOrder = doNone
+    DateFormat = 'yyyy-MM-dd'
+    ButtonWidth = 23
+    NumGlyphs = 1
+    MaxLength = 0
+    TabOrder = 9
+  end
+  object qPessoas: TSQLQuery
+    FieldDefs = <>
+    AutoCalcFields = False
+    Database = DataModule1.database
+    Transaction = DataModule1.transaction
+    SQL.Strings = (
+      'select * from pessoas'
+    )
+    Params = <>
+    Macros = <>
+    Left = 591
+    Top = 249
+  end
+  object dsPessoas: TDataSource
+    AutoEdit = False
+    DataSet = qPessoas
+    Left = 684
+    Top = 256
   end
 end

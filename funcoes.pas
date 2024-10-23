@@ -27,9 +27,16 @@ begin
           sSql:='insert into pessoas values(';
 
           sLinha:=stArquivo[i];
+
+          if(sLinha = '')then
+             Continue;
+
           arrLinha:=sLinha.Split(';');
 
-          for j:=0 to Length(arrLinha)-1 do
+          if(arrLinha[0]='1')then
+             Continue;
+
+          for j:=1 to Length(arrLinha)-1 do
           begin
               if(j < Length(arrLinha)-1)then
                    sSql:=sSql+QuotedStr(arrLinha[j])+','
@@ -41,13 +48,15 @@ begin
           stLista.Add(sSql);
      end;
 
+     stLista.SaveToFile('lista.txt');
      Result:=stLista;
      //FreeAndNil(stLista);
 end;
 
 procedure EnviaComando(database:TSQLite3Connection;sSql: string);
 begin
-  try
+     try
+        database.Transaction.Rollback;
         database.Transaction.StartTransaction;
         database.ExecuteDirect(sSql);
         database.Transaction.Commit;

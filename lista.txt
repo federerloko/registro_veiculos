@@ -1,0 +1,2 @@
+insert into pessoas values('222.222.222-22','fernanda','amorim','fer@bol.com','1999-02-27');
+insert into pessoas values('235.999.787-10','fabio','lima','lima@uol','1994-02-08');

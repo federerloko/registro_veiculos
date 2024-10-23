@@ -1,2 +1,6 @@
-cpf;nome;sobrenome;contato;data_nasc;
-444.458.987-01;Ze;Pedro;pedro@gmail.com;01/01/1987
+sinc;cpf;nome;sobrenome;contato;data_nasc;
+1;444.458.987-01;Ze;Pedro;pedro@gmail.com;01/01/1987
+1;123.456.789-77;gabriela;costa;costa@uol;01/01/1988
+1;897.456.123-45;nilce;sobral;sobral@zipmail.com;25/12/1987
+0;222.222.222-22;fernanda;amorim;fer@bol.com;1999-02-27
+0;235.999.787-10;fabio;lima;lima@uol;1994-02-08

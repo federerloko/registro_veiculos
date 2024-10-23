@@ -62,12 +62,14 @@
         <Filename Value="veiculos.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmVeiculos"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit>
       <Unit>
         <Filename Value="dmveiculos.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="DataModule1"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
         <UnitName Value="dmVeiculos"/>
       </Unit>

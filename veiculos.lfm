@@ -1,7 +1,7 @@
 object frmVeiculos: TfrmVeiculos
-  Left = 294
+  Left = 295
   Height = 483
-  Top = 384
+  Top = 63
   Width = 567
   Caption = 'frmVeiculos'
   ClientHeight = 483
@@ -76,5 +76,6 @@ object frmVeiculos: TfrmVeiculos
     Width = 157
     Caption = 'Confirma'
     TabOrder = 4
+    OnClick = btnConfirmaClick
   end
 end

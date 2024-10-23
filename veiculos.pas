@@ -21,6 +21,7 @@ type
     Label2: TLabel;
     Label3: TLabel;
     Label4: TLabel;
+    procedure btnConfirmaClick(Sender: TObject);
   private
 
   public
@@ -33,6 +34,13 @@ var
 implementation
 
 {$R *.lfm}
+
+{ TfrmVeiculos }
+
+procedure TfrmVeiculos.btnConfirmaClick(Sender: TObject);
+begin
+
+end;
 
 end.
 
